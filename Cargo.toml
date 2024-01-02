@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    # regression algorithms
+    "regression/linear_regression",
+    "regression/logistic_regression",
+    "regression/stepwise_regression",
+
+    # utils
+    "utils",
+]
+
+resolver = "2"
+
+[workspace.dependencies]
+fisher = { git = "https://github.com/Big-Byte-Labs/fisher-rs", branch = "main" }
